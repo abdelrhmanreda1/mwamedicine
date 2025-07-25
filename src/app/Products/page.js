@@ -83,7 +83,7 @@ const AllProducts = () => {
           <h2 className="text-2xl md:text-3xl font-bold text-[#013E5D] mb-4 md:mb-0">
             {filterOption}
           </h2>
-          <div className="flex flex-col sm:flex-row items-center gap-4 w-[78%] sm:w-auto">
+          <div className="flex flex-col sm:flex-row items-center gap-4 w-[82%] sm:w-auto">
             <input
               type="text"
               placeholder="Search products..."
