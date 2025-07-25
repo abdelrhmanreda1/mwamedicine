@@ -1958,4 +1958,76 @@ export const productsData = [
     },
     category: "Joint & Muscle Care",
   },
+  {
+    id: 51,
+    name: "Spermadox",
+    type: "Dietary Supplement",
+    department: "Internal Medicine",
+    brand: "Spermadox",
+    image: "/p51.png",
+    shortDesc:
+      "Supports male fertility and sperm health by enhancing sperm count, motility, and overall reproductive vitality. Helps maintain hormonal balance and boosts energy levels for improved male wellness.",
+
+    fullDesc: {
+      about: [
+        {
+          icon: <GiKneeCap className="text-[#eab308]" size={24} />,
+          title: "Fertility Support",
+          text: "Enhances sperm count and motility for improved fertility.",
+        },
+        {
+          icon: <GiThermometerCold className="text-[#eab308]" size={24} />,
+          title: "Hormonal Balance",
+          text: "Helps maintain healthy testosterone levels naturally.",
+        },
+        {
+          icon: <GiPin className="text-[#eab308]" size={24} />,
+          title: "Overall Reproductive Health",
+          text: "Promotes overall male reproductive wellness and vitality.",
+        },
+      ],
+      usage: [
+        "Take 2 capsules daily with meals.",
+        "Maintain a balanced diet and healthy lifestyle.",
+        "Consult your doctor before use if you have any medical conditions.",
+      ],
+    },
+    category: "Men's Supplements",
+  },
+  {
+    id: 52,
+    name: "PolyCystic OFF",
+    type: "Dietary Supplement",
+    department: "Gynecology",
+    brand: "PolyCystic OFF",
+    image: "/p52.png",
+    shortDesc:
+      "Supports hormonal balance and ovarian health by promoting regular menstrual cycles, reducing symptoms of hormonal imbalance, and enhancing overall reproductive wellness.",
+
+    fullDesc: {
+      about: [
+        {
+          icon: <GiKneeCap className="text-[#eab308]" size={24} />,
+          title: "Hormonal Balance",
+          text: "Helps regulate hormones for better ovarian function.",
+        },
+        {
+          icon: <GiThermometerCold className="text-[#eab308]" size={24} />,
+          title: "Ovarian Health",
+          text: "Supports healthy ovary function and follicle development.",
+        },
+        {
+          icon: <GiPin className="text-[#eab308]" size={24} />,
+          title: "Overall Wellness",
+          text: "Promotes general reproductive system health and vitality.",
+        },
+      ],
+      usage: [
+        "Take 1 capsule daily with meals.",
+        "Maintain a balanced diet and healthy lifestyle.",
+        "Consult your healthcare provider before use.",
+      ],
+    },
+    category: "Women's Supplements",
+  },
 ];
