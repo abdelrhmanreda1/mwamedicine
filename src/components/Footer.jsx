@@ -68,7 +68,8 @@ const Footer = () => {
               href="#"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 hover:text-[#1877F2] transition" // Facebook Blue
+              aria-label="Facebook"
+              className="text-gray-500 hover:text-[#1877F2] transition"
             >
               <FiFacebook size={22} />
             </a>
@@ -76,7 +77,8 @@ const Footer = () => {
               href="#"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 hover:text-[#1DA1F2] transition" // Twitter Blue
+              aria-label="Twitter"
+              className="text-gray-500 hover:text-[#1DA1F2] transition"
             >
               <FiTwitter size={22} />
             </a>
@@ -84,7 +86,8 @@ const Footer = () => {
               href="#"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 hover:text-[#E4405F] transition" // Instagram Pinkish
+              aria-label="Instagram"
+              className="text-gray-500 hover:text-[#E4405F] transition"
             >
               <FiInstagram size={22} />
             </a>
@@ -92,7 +95,8 @@ const Footer = () => {
               href="#"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 hover:text-[#0A66C2] transition" // LinkedIn Blue
+              aria-label="LinkedIn"
+              className="text-gray-500 hover:text-[#0A66C2] transition"
             >
               <FiLinkedin size={22} />
             </a>
