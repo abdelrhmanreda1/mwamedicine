@@ -110,21 +110,34 @@ const ProductPage = () => {
                 <label className="text-lg text-gray-600 font-medium">
                   Quantity:
                 </label>
-                <select
-                  value={quantity}
-                  onChange={(e) => setQuantity(e.target.value)}
-                  className="border cursor-pointer border-gray-300 rounded-lg px-3 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#013E5D]"
-                >
-                  {[...Array(10)].map((_, i) => (
-                    <option
-                      key={i + 1}
-                      value={i + 1}
-                      className="cursor-pointer"
-                    >
-                      {i + 1}
-                    </option>
-                  ))}
-                </select>
+                <div className="flex items-center border border-gray-300 rounded-lg overflow-hidden">
+                  <button
+                    type="button"
+                    onClick={() => setQuantity((prev) => Math.max(1, prev - 1))}
+                    className="px-2 py-2 bg-gray-100 text-gray-700 hover:bg-gray-200 transition"
+                  >
+                    -
+                  </button>
+                  <input
+                    type="number"
+                    min="1"
+                    value={quantity}
+                    onChange={(e) =>
+                      setQuantity(
+                        Number(e.target.value) > 0 ? Number(e.target.value) : 1
+                      )
+                    }
+                    className="w-[70px] text-center border-x border-gray-300 py-2 outline-none focus:ring-0 focus:outline-none no-spinner"
+                  />
+
+                  <button
+                    type="button"
+                    onClick={() => setQuantity((prev) => prev + 1)}
+                    className=" py-2 px-2 bg-gray-100 text-gray-700 hover:bg-gray-200 transition text-center "
+                  >
+                    +
+                  </button>
+                </div>
               </div>
 
               <button
@@ -144,7 +157,7 @@ Kindly confirm availability and provide me with the total price. Thank you!`;
                   )}`;
                   window.open(whatsappUrl, "_blank");
                 }}
-                className="flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1da851] text-white  px-2  py-4 rounded-xl font-semibold text-[16px] md:text-lg shadow-md transition-all duration-300 "
+                className="flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1da851] text-white  px-2  py-4 rounded-xl font-semibold text-[15px] md:text-lg shadow-md transition-all duration-300 "
               >
                 <FaWhatsapp size={24} /> Order Now on WhatsApp
               </button>
