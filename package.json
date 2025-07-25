@@ -25,5 +25,8 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "tailwindcss": "^4"
-  }
+  },
+  "browserslist": [
+    "defaults and not IE 11 and not dead"
+  ]
 }

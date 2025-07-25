@@ -5,6 +5,8 @@ import "keen-slider/keen-slider.min.css";
 import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
+
 const images = ["/slider3.jpeg", "/slider2.jpeg", "/slider1.jpeg"];
 
 const Slider = () => {
@@ -49,10 +51,13 @@ const Slider = () => {
       <div ref={sliderRef} className="keen-slider h-[86vh] lg:h-[92vh]">
         {images.map((src, i) => (
           <div key={i} className="keen-slider__slide relative">
-            <img
+            <Image
               src={src}
               alt={`slide-${i}`}
-              className="w-full h-full object-cover"
+              fill
+              className="object-cover"
+              priority={i === 0} // تخلي أول صورة تتحمل بسرعة
+              sizes="100vw"
             />
 
             <div className="absolute mt-20 inset-0 flex flex-col justify-center items-center text-center px-4">
