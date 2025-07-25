@@ -95,9 +95,6 @@ const ProductPage = () => {
                     {[...Array(5)].map((_, i) => (
                       <AiFillStar key={i} />
                     ))}
-                    <span className="text-[13px] text-gray-500 ml-2">
-                      (12 Reviews)
-                    </span>
                   </div>
                 </div>
               </div>
@@ -121,12 +118,21 @@ const ProductPage = () => {
                   <input
                     type="number"
                     min="1"
-                    value={quantity}
-                    onChange={(e) =>
-                      setQuantity(
-                        Number(e.target.value) > 0 ? Number(e.target.value) : 1
-                      )
-                    }
+                    value={quantity === 0 ? "" : quantity}
+                    onChange={(e) => {
+                      const val = e.target.value;
+
+                      if (val === "") {
+                        setQuantity("");
+                      } else {
+                        setQuantity(Number(val));
+                      }
+                    }}
+                    onBlur={() => {
+                      if (!quantity || quantity < 1) {
+                        setQuantity(1);
+                      }
+                    }}
                     className="w-[70px] text-center border-x border-gray-300 py-2 outline-none focus:ring-0 focus:outline-none no-spinner"
                   />
 
