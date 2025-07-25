@@ -83,7 +83,7 @@ const AllProducts = () => {
           <h2 className="text-2xl md:text-3xl font-bold text-[#013E5D] mb-4 md:mb-0">
             {filterOption}
           </h2>
-          <div className="flex flex-col sm:flex-row items-center gap-4 w-[63%] sm:w-auto">
+          <div className="flex flex-col sm:flex-row items-center gap-4 w-[75%] sm:w-auto">
             <input
               type="text"
               placeholder="Search products..."
@@ -167,7 +167,7 @@ const AllProducts = () => {
               ))}
             </div>
             {totalPages > 1 && (
-              <div className="flex justify-center items-center gap-2 mt-12">
+              <div className="flex justify-center items-center gap-1 md:gap-2 mt-12">
                 <button
                   onClick={() => handlePageChange(currentPage - 1)}
                   disabled={currentPage === 1}

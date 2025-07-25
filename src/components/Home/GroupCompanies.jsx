@@ -32,9 +32,9 @@ const GroupCompanies = () => {
           {[...companies, ...companies].map((company, i) => (
             <div
               key={i}
-              className=" flex items-center justify-center w-[260px] h-[180px] mx-5 cursor-pointer"
+              className=" flex items-center justify-center w-[140px] md:w-[260px] h-[80px] md:h-[180px] mx-0 md:mx-5 cursor-pointer"
             >
-              <div className="relative w-full h-full flex items-center justify-center p-2">
+              <div className="relative w-full h-full flex items-center justify-center  p-0 md:p-2">
                 <Image
                   src={company.logo}
                   alt={company.name}

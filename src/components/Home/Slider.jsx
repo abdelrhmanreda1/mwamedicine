@@ -32,7 +32,7 @@ const Slider = () => {
         if (instanceRef.current) {
           instanceRef.current.next();
         }
-      }, 2500);
+      }, 3000);
     };
 
     autoPlay();
@@ -61,7 +61,7 @@ const Slider = () => {
                 initial={{ x: -100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className="text-[34px] mt-20 md:text-7xl font-extrabold text-white leading-tight mb-6 
+                className="text-[28px] mt-20 md:text-7xl font-extrabold text-white leading-tight mb-6 
   drop-shadow-[0_3px_6px_rgba(0,0,0,0.6)]
   md:drop-shadow-[0_8px_16px_rgba(0,0,0,0.75)]
   tracking-wide"
