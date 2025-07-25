@@ -144,7 +144,7 @@ Kindly confirm availability and provide me with the total price. Thank you!`;
                   )}`;
                   window.open(whatsappUrl, "_blank");
                 }}
-                className="flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1da851] text-white  px-2  py-4 rounded-xl font-semibold text-lg shadow-md transition-all duration-300 "
+                className="flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1da851] text-white  px-2  py-4 rounded-xl font-semibold text-[16px] md:text-lg shadow-md transition-all duration-300 "
               >
                 <FaWhatsapp size={24} /> Order Now on WhatsApp
               </button>
