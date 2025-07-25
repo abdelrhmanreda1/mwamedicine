@@ -74,7 +74,7 @@ const Navbar = () => {
           !showNavbar && "translate-y-[-100%]"
         )}
       >
-        <div className="w-[90%] mx-auto flex justify-between items-center px-1 md:px-6 py-3">
+        <div className="w-[90%] mx-auto flex justify-between items-center px-1 md:px-6 py-1 md:py-3">
           <Link href="/">
             <Image
               src="/logowhite.png"
