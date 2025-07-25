@@ -1,24 +1,8 @@
 @import "tailwindcss";
-@import "keen-slider/keen-slider.min.css";
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
-
-/* @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
 
 html {
   scroll-behavior: smooth;
@@ -104,37 +88,6 @@ button {
   cursor: pointer;
 }
 
-/* html,
-body,
-#__next {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  background: linear-gradient(
-    to bottom,
-    #f7fbfd,
-     #e6f3fa,
-     #dff3fc 
-  );
-}
-
-#__next {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-body > main {
-  flex-grow: 1;
-}
-
-footer {
-  margin-top: auto;
-} */
-
-/* Hide default arrows in number input */
 .no-spinner::-webkit-outer-spin-button,
 .no-spinner::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -142,5 +95,9 @@ footer {
 }
 
 .no-spinner {
-  -moz-appearance: textfield; /* For Firefox */
+  appearance: textfield;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  border: none;
+  outline: none;
 }

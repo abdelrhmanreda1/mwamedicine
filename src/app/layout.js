@@ -20,16 +20,15 @@ export const metadata = {
   keywords:
     "MWA Medicine, medical products, health supplements, orthopedic, neurology, gynecology, internal medicine, wellness, healthcare",
   authors: [{ name: "MWA Medicine", url: "https://mwamedicine.vercel.app/" }],
-  viewport: "width=device-width, initial-scale=1",
   openGraph: {
     title: "MWA Medicine - Premium Medical Products",
     description:
       "Explore MWA Medicine’s wide range of premium medical products and supplements designed to support your health and wellbeing.",
-    url: "https://mwa-medicine.com",
+    url: "https://mwamedicine.vercel.app/",
     siteName: "MWA Medicine",
     images: [
       {
-        url: "https://mwa-medicine.com/images/og-image.jpg",
+        url: "https://mwamedicine.vercel.app/logowhite.png",
         width: 1200,
         height: 630,
         alt: "MWA Medicine Logo",
@@ -48,11 +47,18 @@ export const metadata = {
   },
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
         <Navbar />
         <main style={{ flexGrow: 1 }}>{children}</main>
