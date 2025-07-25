@@ -124,6 +124,7 @@ const Navbar = () => {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden text-white text-3xl cursor-pointer"
+            aria-label={isOpen ? "Close menu" : "Open menu"}
           >
             {isOpen ? <FiX /> : <FiMenu />}
           </button>

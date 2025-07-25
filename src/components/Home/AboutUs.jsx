@@ -33,8 +33,9 @@ const AboutUs = () => {
               src="/about.jpeg"
               alt="About Us"
               width={700}
-              height={500}
-              className="rounded-2xl object-cover w-full h-[480px] "
+              height={480}
+              sizes="(max-width: 768px) 100vw, 700px"
+              className="rounded-2xl object-cover w-full h-[480px]"
               priority
             />
           </motion.div>

@@ -56,7 +56,7 @@ const Slider = () => {
               alt={`slide-${i}`}
               fill
               className="object-cover"
-              priority={i === 0} // تخلي أول صورة تتحمل بسرعة
+              priority={i === 0}
               sizes="100vw"
             />
 

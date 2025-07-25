@@ -52,6 +52,7 @@ const ProductPage = () => {
               alt={product.name}
               width={450}
               height={450}
+              priority
               className="object-contain transition-transform duration-500 group-hover:scale-105"
             />
           </motion.div>

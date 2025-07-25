@@ -42,16 +42,20 @@ export const metadata = {
     title: "MWA Medicine - Premium Medical Products",
     description:
       "Explore MWA Medicine’s wide range of premium medical products and supplements designed to support your health and wellbeing.",
-    images: ["https://mwa-medicine.com/images/twitter-image.jpg"],
+    images: ["https://mwamedicine.vercel.app/logowhite.png"],
     creator: "@MWAMedicine",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    // disallow: "/admin", // لو عايز تمنع مجلد معين مثلاً
+    // nocache: true, // لو عايز تمنع التخزين المؤقت من الكاش
   },
 };
 
 export const viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
 };
 
 export default function RootLayout({ children }) {
