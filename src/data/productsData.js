@@ -1962,6 +1962,7 @@ export const productsData = [
     id: 51,
     name: "Spermadox",
     type: "Dietary Supplement",
+    isNew: true,
     department: "Internal Medicine",
     brand: "Spermadox",
     image: "/p51.png",
@@ -2000,6 +2001,7 @@ export const productsData = [
     type: "Dietary Supplement",
     department: "Gynecology",
     brand: "PolyCystic OFF",
+    isNew: true,
     image: "/p52.png",
     shortDesc:
       "Supports hormonal balance and ovarian health by promoting regular menstrual cycles, reducing symptoms of hormonal imbalance, and enhancing overall reproductive wellness.",

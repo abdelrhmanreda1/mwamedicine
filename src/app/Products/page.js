@@ -17,6 +17,21 @@ const AllProducts = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const router = useRouter();
 
+  const handleSearchChange = (e) => {
+    setSearchTerm(e.target.value);
+    setCurrentPage(1);
+  };
+
+  const handleFilterChange = (e) => {
+    setFilterOption(e.target.value);
+    setCurrentPage(1);
+  };
+
+  const handleSortChange = (e) => {
+    setSortOption(e.target.value);
+    setCurrentPage(1);
+  };
+
   const filteredAndSortedProducts = useMemo(() => {
     let filtered = [...productsData];
 
@@ -26,17 +41,30 @@ const AllProducts = () => {
       );
     }
 
+    function normalizeText(text) {
+      return text
+        .toLowerCase()
+        .replace(/[-_/.,]/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+    }
+
     if (searchTerm.trim() !== "") {
-      const term = searchTerm.toLowerCase();
+      const terms = normalizeText(searchTerm)
+        .split(" ")
+        .filter((t) => t.length > 0);
+
       filtered = filtered.filter((product) => {
-        return (
-          product.name.toLowerCase().includes(term) ||
-          product.shortDesc.toLowerCase().includes(term) ||
-          product.fullDesc?.about?.some((item) =>
-            item.text.toLowerCase().includes(term)
-          ) ||
-          product.category.toLowerCase().includes(term)
-        );
+        const haystack = [
+          product.name,
+          product.shortDesc,
+          product.category,
+          ...(product.fullDesc?.about?.map((item) => item.text) || []),
+        ]
+          .map(normalizeText)
+          .join(" ");
+
+        return terms.every((term) => haystack.includes(term));
       });
     }
 
@@ -89,13 +117,13 @@ const AllProducts = () => {
               placeholder="Search products..."
               className="border border-gray-300 rounded-lg px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-[#013E5D] w-full sm:w-64"
               value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
+              onChange={handleSearchChange}
             />
             <div className="flex gap-6">
               <select
                 className="border border-gray-300 rounded-lg px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-[#013E5D]"
                 value={sortOption}
-                onChange={(e) => setSortOption(e.target.value)}
+                onChange={handleSortChange}
               >
                 <option value="Newest">Newest</option>
                 <option value="Oldest">Oldest</option>
@@ -105,7 +133,7 @@ const AllProducts = () => {
               <select
                 className="border border-gray-300 rounded-lg px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-[#013E5D]"
                 value={filterOption}
-                onChange={(e) => setFilterOption(e.target.value)}
+                onChange={handleFilterChange}
               >
                 <option value="All Products">All Products</option>
                 <option value="Internal Medicine">Internal Medicine</option>
@@ -145,6 +173,17 @@ const AllProducts = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-b from-white/0 to-[#f0f4f8]/40 opacity-0 group-hover:opacity-100 transition duration-500"></div>
                   </div>
+                  {product.isNew && (
+                    <motion.span
+                      initial={{ opacity: 0, scale: 0.5, rotate: -15 }}
+                      animate={{ opacity: 1, scale: 1, rotate: 0 }}
+                      transition={{ duration: 0.5, ease: "easeOut" }}
+                      className="absolute top-3 right-3 bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-full  z-20 select-none"
+                    >
+                      NEW
+                    </motion.span>
+                  )}
+
                   <div className="px-5 pb-5 text-center mt-[-15px]">
                     <h3 className="text-lg font-bold text-[#013E5D] mb-2">
                       {product.name}
