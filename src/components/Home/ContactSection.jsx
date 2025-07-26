@@ -32,8 +32,8 @@ const ContactSection = () => {
                 <div>
                   <h3 className="font-semibold text-[#1e293b]">Address</h3>
                   <p className="text-[#475569]">
-                    Yeni Baglica Neighborhood, Zirve Street, 35 Sites, No: 73A,
-                    Etimesgut / Ankara
+                    YENİ BAĞLICA MAH. ZİRVE CAD. 35 SİTESİ NO: 73A ETİMESGUT /
+                    ANKARA
                   </p>
                 </div>
               </div>
@@ -43,6 +43,7 @@ const ContactSection = () => {
                 <div>
                   <h3 className="font-semibold text-[#1e293b]">Phone</h3>
                   <p className="text-[#475569]">+90 535 252 2282</p>
+                  <p className="text-[#475569]">+90 535 252 2281</p>
                 </div>
               </div>
 

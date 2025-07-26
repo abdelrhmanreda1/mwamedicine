@@ -6,25 +6,25 @@ import { useState } from "react";
 
 const teamMembers = [
   {
+    name: "Mustafa Mohsen",
+    title: "Founder & General Manager – MWA Medical",
+    description:
+      "With a background in Computer Engineering and a Master’s degree in Business Administration, I have been working in the pharmaceutical and dietary supplements industry since 2012.I believe that science-backed innovation and years of experience are key to creating safe, effective, and trustworthy products.MWA Medical was founded with the vision of combining pharmaceutical knowledge, smart management, and modern technology to deliver world-class nutritional supplements",
+    image: "/team2.jpeg",
+  },
+  {
+    name: "Dr. Muhannad Waleed",
+    title:
+      "Founder and Director of Sales & Business Development at the Manufacturing Facility",
+    description: `Bachelor of Science in Pharmacy,Master’s Degree in Embryology and Infertility,Ph.D. in Physiology with extensive expertise in infertility treatment and human embryo cryopreservation, holding multiple patents in the field.`,
+    image: "/team3.jpeg",
+  },
+  {
     name: "KübrAnur Çevik",
     title: "Food Engineer",
     description:
       "With 3 years of experience at MWA Medical, KübrAnur plays a key role in quality control, formulation development, and production processes. Her expertise and meticulous approach ensure that our products meet the highest standards of safety and quality.",
     image: "/team1.jpeg",
-  },
-  {
-    name: "Mustafa Mohsen",
-    title: "Head of Research & Development",
-    description:
-      "With a background in Computer Engineering and a Master’s degree in Business Administration, I am committed to combining science and strategic leadership to create supplements that genuinely improve people’s health and lives.",
-    image: "/team2.jpeg",
-  },
-  {
-    name: "Dr. Muhannad Waleed",
-    title: "Founder and Director of Sales",
-    description:
-      "Ph.D. in Physiology with extensive expertise in infertility treatment and human embryo cryopreservation, holding multiple patents in the field.",
-    image: "/team3.jpeg",
   },
 ];
 
