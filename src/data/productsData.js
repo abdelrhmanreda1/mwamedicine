@@ -59,6 +59,8 @@ import {
   GiIncense,
   GiMicroscope,
   GiHealthNormal,
+  GiHealingShield,
+  GiEyeShield,
 } from "react-icons/gi";
 import {
   FaEye,
@@ -1962,7 +1964,7 @@ export const productsData = [
     id: 51,
     name: "Spermadox",
     type: "Dietary Supplement",
-    isNew: true,
+    isNew: false,
     department: "Internal Medicine",
     brand: "Spermadox",
     image: "/p51.png",
@@ -2001,7 +2003,7 @@ export const productsData = [
     type: "Dietary Supplement",
     department: "Gynecology",
     brand: "PolyCystic OFF",
-    isNew: true,
+    isNew: false,
     image: "/p52.png",
     shortDesc:
       "Supports hormonal balance and ovarian health by promoting regular menstrual cycles, reducing symptoms of hormonal imbalance, and enhancing overall reproductive wellness.",
@@ -2031,5 +2033,385 @@ export const productsData = [
       ],
     },
     category: "Women's Supplements",
+  },
+  {
+    id: 53,
+    name: "EYECORD",
+    type: "Dietary Supplement",
+    department: "Internal Medicine",
+    brand: "Lacora Nutrition",
+    isNew: true,
+    image: "/p53.png",
+    shortDesc:
+      "Supports eye health by protecting the retina, enhancing vision clarity, and shielding the eyes from blue light exposure with natural antioxidant power.",
+
+    fullDesc: {
+      about: [
+        {
+          icon: <GiHealingShield className="text-[#eab308]" size={24} />,
+          title: "Blue Light Protection",
+          text: "Helps shield the eyes from harmful blue light emitted by screens.",
+        },
+        {
+          icon: <GiEyeShield className="text-[#eab308]" size={24} />,
+          title: "Retinal Support",
+          text: "Strengthens retinal health and supports long-term vision performance.",
+        },
+        {
+          icon: <GiHerbsBundle className="text-[#eab308]" size={24} />,
+          title: "Antioxidant Formula",
+          text: "Provides natural antioxidants to reduce oxidative stress on the eyes.",
+        },
+      ],
+      usage: [
+        "Take 1 capsule daily after meals.",
+        "Avoid prolonged screen exposure when possible.",
+        "Consult a healthcare professional if you have any eye conditions.",
+      ],
+    },
+
+    category: "Vision Supplements",
+  },
+  {
+    id: 54,
+    name: "Hicora",
+    type: "Dietary Supplement",
+    department: "Internal Medicine",
+    brand: "Lacora Nutrition",
+    isNew: true,
+    image: "/p54.png",
+    shortDesc:
+      "Supports colon health by relieving bloating, constipation, irritable bowel symptoms, and promoting healthier digestion.",
+
+    fullDesc: {
+      about: [
+        {
+          icon: <GiStomach className="text-[#eab308]" size={24} />,
+          title: "Digestive Comfort",
+          text: "Helps relieve bloating, colic, and discomfort associated with digestive imbalance.",
+        },
+        {
+          icon: <GiDrop className="text-[#eab308]" size={24} />,
+          title: "Constipation Relief",
+          text: "Supports smoother bowel movements and helps with dry or hard stools.",
+        },
+        {
+          icon: <GiHealing className="text-[#eab308]" size={24} />,
+          title: "IBS Support",
+          text: "Assists in reducing symptoms of irritable bowel syndrome and loose bowels.",
+        },
+      ],
+      usage: [
+        "Take 1 capsule twice daily after meals.",
+        "Stay hydrated throughout the day.",
+        "Consult a healthcare provider if pregnant or experiencing chronic digestive issues.",
+      ],
+    },
+
+    category: "Digestive Health",
+  },
+  {
+    id: 55,
+    name: "Becormix Renaseptic",
+    type: "Dietary Supplement",
+    department: "Internal Medicine",
+    brand: "Lacora Nutrition",
+    isNew: true,
+    image: "/p55.png",
+    shortDesc:
+      "Supports kidney function and urinary tract health with a natural herbal formula designed to relieve inflammation and improve urine flow.",
+
+    fullDesc: {
+      about: [
+        {
+          icon: <GiKidneys className="text-[#F97316]" size={24} />,
+          title: "Kidney Support",
+          text: "Helps maintain healthy kidney function and supports toxin elimination.",
+        },
+        {
+          icon: <GiDroplets className="text-[#F97316]" size={24} />,
+          title: "Urinary Tract Relief",
+          text: "Aids in reducing discomfort associated with urinary tract irritation.",
+        },
+        {
+          icon: <GiHealingShield className="text-[#F97316]" size={24} />,
+          title: "Herbal Protection",
+          text: "Herbal blend formulated to soothe inflammation and promote urinary wellness.",
+        },
+      ],
+      usage: [
+        "Dissolve 1 sachet in a glass of water and take once or twice daily.",
+        "Increase fluid intake throughout the day.",
+        "Consult a healthcare provider if symptoms persist.",
+      ],
+    },
+
+    category: "Kidney & Urinary Health",
+  },
+  {
+    id: 56,
+    name: "Vitaflex",
+    type: "Dietary Supplement",
+    department: "Orthopedic",
+    brand: "Lacora Nutrition",
+    isNew: true,
+    image: "/p56.png",
+    shortDesc:
+      "Supports joint flexibility, cartilage strength, and overall mobility with glucosamine, chondroitin, collagen, and Vitamin C.",
+
+    fullDesc: {
+      about: [
+        {
+          icon: <GiKneeCap className="text-[#5A2D82]" size={24} />,
+          title: "Joint Flexibility",
+          text: "Enhances joint mobility and reduces stiffness for smoother movement.",
+        },
+        {
+          icon: <GiJoint className="text-[#5A2D82]" size={24} />,
+          title: "Cartilage Support",
+          text: "Provides nutrients essential for maintaining strong, healthy cartilage.",
+        },
+        {
+          icon: <GiBoneKnife className="text-[#5A2D82]" size={24} />,
+          title: "Collagen Boost",
+          text: "Improves collagen formation to support connective tissues and joint resilience.",
+        },
+      ],
+      usage: [
+        "Take 1 capsule twice daily.",
+        "Use consistently for best results.",
+        "Consult your doctor if you have joint disorders or chronic pain.",
+      ],
+    },
+
+    category: "Joint & Bone Health",
+  },
+  {
+    id: 57,
+    name: "Becora-plus",
+    type: "Dietary Supplement",
+    department: "Neurology",
+    brand: "Lacora Nutrition",
+    isNew: true,
+    image: "/p57.png",
+    shortDesc:
+      "Vitamin B6 and B12 formula designed to support nerve repair, enhance energy levels, and reduce nerve-related discomfort.",
+
+    fullDesc: {
+      about: [
+        {
+          icon: <GiBrain className="text-[#4B2E83]" size={24} />,
+          title: "Nerve Repair Support",
+          text: "Helps nourish and repair peripheral nerves to improve nerve function.",
+        },
+        {
+          icon: <GiEnergyArrow className="text-[#4B2E83]" size={24} />,
+          title: "Energy & Vitality",
+          text: "Boosts overall body energy and reduces fatigue caused by nerve weakness.",
+        },
+        {
+          icon: <GiHealing className="text-[#4B2E83]" size={24} />,
+          title: "Facial Palsy Support",
+          text: "May aid in recovery from nerve-related facial weakness and discomfort.",
+        },
+      ],
+      usage: [
+        "Take 1 capsule once or twice daily after meals.",
+        "Maintain a balanced diet to support nerve health.",
+        "Consult a specialist if symptoms persist or worsen.",
+      ],
+    },
+
+    category: "Nerve Health",
+  },
+  {
+    id: 58,
+    name: "Becormix-Boost",
+    type: "Dietary Supplement",
+    department: "Neurology",
+    brand: "Lacora Nutrition",
+    isNew: true,
+    image: "/p58.png",
+    shortDesc:
+      "Advanced B-vitamin formula supporting nerve repair, boosting energy levels, and aiding recovery from nerve-related facial weakness.",
+
+    fullDesc: {
+      about: [
+        {
+          icon: <GiBrain className="text-[#4A2FA2]" size={24} />,
+          title: "Nerve Repair Support",
+          text: "Helps nourish and repair damaged nerves, enhancing overall nerve function.",
+        },
+        {
+          icon: <GiEnergyArrow className="text-[#4A2FA2]" size={24} />,
+          title: "Boosts Body Energy",
+          text: "Improves vitality and reduces fatigue caused by nerve weakness.",
+        },
+        {
+          icon: <GiHealing className="text-[#4A2FA2]" size={24} />,
+          title: "Facial Palsy Aid",
+          text: "Provides nutritional support that may assist in recovering from facial nerve issues.",
+        },
+      ],
+      usage: [
+        "Take 1 capsule once or twice daily after meals.",
+        "Stay consistent for optimal nerve support.",
+        "Consult a neurologist if symptoms persist.",
+      ],
+    },
+
+    category: "Nerve Health",
+  },
+  {
+    id: 59,
+    name: "Nuclomax",
+    type: "Dietary Supplement",
+    department: "Neurology",
+    brand: "Lacora Nutrition",
+    isNew: true,
+    image: "/p59.png",
+    shortDesc:
+      "Advanced neuro-support formula designed to relieve neuropathic pain, support nerve repair, and improve nerve function in various neuropathy conditions.",
+
+    fullDesc: {
+      about: [
+        {
+          icon: <GiBrain className="text-[#4A2FA2]" size={24} />,
+          title: "Neuropathy Support",
+          text: "Helps improve nerve function and reduce symptoms of diabetic, metabolic, and alcoholic neuropathies.",
+        },
+        {
+          icon: <GiLightningArc className="text-[#4A2FA2]" size={24} />,
+          title: "Pain Relief",
+          text: "Supports relief from nerve pain caused by herpes zoster and osteoarthritic neuralgia.",
+        },
+        {
+          icon: <GiHealing className="text-[#4A2FA2]" size={24} />,
+          title: "Nerve Repair",
+          text: "Promotes nerve healing and restoration in chronic neuropathic conditions.",
+        },
+      ],
+      usage: [
+        "Take 1 capsule once or twice daily after meals.",
+        "Use consistently to support nerve recovery.",
+        "Consult a healthcare provider for chronic or severe neuropathic cases.",
+      ],
+    },
+
+    category: "Nerve Health",
+  },
+  {
+    id: 60,
+    name: "Caldicin",
+    type: "Dietary Supplement",
+    department: "Orthopedic",
+    brand: "Lacora Nutrition",
+    isNew: true,
+    image: "/p60.png",
+    shortDesc:
+      "Calcium, Vitamin D3, and Vitamin K formula designed to support strong bones, enhance calcium absorption, and maintain teeth health.",
+
+    fullDesc: {
+      about: [
+        {
+          icon: <GiBoneKnife className="text-[#4A2FA2]" size={24} />,
+          title: "Bone Strength",
+          text: "Provides essential calcium to maintain bone density and overall skeletal strength.",
+        },
+        {
+          icon: <GiJoint className="text-[#4A2FA2]" size={24} />,
+          title: "Enhanced Absorption",
+          text: "Vitamin D3 helps maximize calcium absorption into bones for better effectiveness.",
+        },
+        {
+          icon: <GiHealing className="text-[#4A2FA2]" size={24} />,
+          title: "Bone Repair Support",
+          text: "Vitamin K contributes to proper calcium fixation and supports bone regeneration.",
+        },
+      ],
+      usage: [
+        "Take 1 capsule once or twice daily after meals.",
+        "Ensure exposure to sunlight to boost Vitamin D activity.",
+        "Consult your doctor if you have chronic bone or calcium disorders.",
+      ],
+    },
+
+    category: "Bone & Joint Health",
+  },
+  {
+    id: 61,
+    name: "Neurodox",
+    type: "Dietary Supplement",
+    department: "Neurology",
+    brand: "Lacora Nutrition",
+    isNew: true,
+    image: "/p61.png",
+    shortDesc:
+      "Neuro-support formula designed to relieve neuropathic pain, enhance nerve regeneration, and boost brain performance.",
+
+    fullDesc: {
+      about: [
+        {
+          icon: <GiLightningArc className="text-[#25C3CF]" size={24} />,
+          title: "Neuropathic Pain Relief",
+          text: "Helps reduce nerve pain associated with peripheral neuropathy.",
+        },
+        {
+          icon: <GiHealing className="text-[#25C3CF]" size={24} />,
+          title: "Nerve Regeneration",
+          text: "Supports the repair and regeneration of damaged nerves.",
+        },
+        {
+          icon: <GiBrain className="text-[#25C3CF]" size={24} />,
+          title: "Brain Booster",
+          text: "Enhances focus, memory, and overall brain performance.",
+        },
+      ],
+      usage: [
+        "Take 1 capsule once or twice daily after meals.",
+        "Stay consistent to improve nerve function.",
+        "Consult a neurologist if symptoms persist.",
+      ],
+    },
+
+    category: "Nerve Health",
+  },
+  {
+    id: 62,
+    name: "Becormix-Boost Syrup",
+    type: "Dietary Supplement",
+    department: "Neurology",
+    brand: "Lacora Nutrition",
+    isNew: true,
+    image: "/p62.png",
+    shortDesc:
+      "Neuro-support syrup containing L-Carnitine, Taurine, Vitamin B6, and Methylcobalamin to enhance brain activity, memory, and mental performance.",
+
+    fullDesc: {
+      about: [
+        {
+          icon: <GiBrain className="text-[#4A2FA2]" size={24} />,
+          title: "Brain Activity Support",
+          text: "Helps enhance intellectual performance and improve overall cognitive function.",
+        },
+        {
+          icon: <GiEnergyArrow className="text-[#4A2FA2]" size={24} />,
+          title: "Mental Energy",
+          text: "Supports mental alertness and boosts focus throughout the day.",
+        },
+        {
+          icon: <GiHealing className="text-[#4A2FA2]" size={24} />,
+          title: "Nerve Health",
+          text: "Provides essential neuro vitamins that contribute to nerve repair and regeneration.",
+        },
+      ],
+      usage: [
+        "Adults: 5 ml once daily or as prescribed by a physician.",
+        "Shake well before use.",
+        "Use consistently for best cognitive support.",
+      ],
+    },
+
+    category: "Nerve Health",
   },
 ];
