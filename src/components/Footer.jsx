@@ -21,7 +21,7 @@ const Footer = () => {
           </div>
 
           {/* Description */}
-          <p className=" text-gray-600 leading-relaxed w-[52%]">
+          <p className=" text-gray-600 leading-relaxed w-full md:w-[52%]">
             Providing trusted medical services and innovative solutions to
             improve healthcare and enhance patients’ lives.
           </p>

@@ -14,12 +14,12 @@ const companies = [
 const GroupCompanies = () => {
   return (
     <section className="relative bg-gradient-to-b from-[#f7fbfd] via-[#e6f3fa] to-[#dff3fc] py-16">
-      <div className="max-w-7xl mx-auto text-center px-6">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-[#035182]">
+      <div className="max-w-7xl mx-auto text-center px-3 md:px-6">
+        <h2 className="text-2xl md:text-5xl font-extrabold text-[#035182]">
           MWA Medicine Group Companies
         </h2>
         <span className="block w-28 h-1 bg-gradient-to-r from-[#5ecbff] to-[#0389d2] mx-auto mt-3 rounded-full"></span>
-        <p className="text-gray-700 text-lg md:text-xl max-w-3xl mx-auto mt-6 leading-8">
+        <p className="text-gray-700 text-[16px] md:text-xl w-full md:max-w-3xl mx-auto mt-6 leading-8">
           Introducing our esteemed partners, a distinguished group of companies
           whose exceptional products we proudly import. Together, we strive to
           deliver cutting-edge solutions for better healthcare outcomes.

@@ -18,7 +18,7 @@ const Navbar = () => {
     { name: "Home", href: "/" },
     { name: "About Us", href: "/#about" },
     { name: "Products", href: "/Products" },
-    { name: "Contact", href: "/#contact" },
+    // Contact removed (now separate button)
   ];
 
   useEffect(() => {
@@ -52,8 +52,6 @@ const Navbar = () => {
       } else {
         if (hash === "#about") {
           setActive("About Us");
-        } else if (hash === "#contact") {
-          setActive("Contact");
         } else {
           setActive("Home");
         }
@@ -86,19 +84,12 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex gap-8 font-semibold text-base">
+          <ul className="hidden md:flex items-center gap-8 font-semibold text-base">
             {navLinks.map((link) => (
               <li key={link.name} className="group">
                 <Link
                   href={link.href}
-                  onClick={() => {
-                    if (link.href.includes("#")) {
-                      // لو اللينك هاش بس
-                      setActive(link.name);
-                    } else {
-                      setActive(link.name);
-                    }
-                  }}
+                  onClick={() => setActive(link.name)}
                   className={clsx(
                     "uppercase tracking-wide transition-all duration-300 pb-1",
                     active === link.name
@@ -118,6 +109,28 @@ const Navbar = () => {
                 </Link>
               </li>
             ))}
+
+            {/* Contact Button */}
+            <li>
+              <Link
+                href="/#contact"
+                className="
+                  bg-white 
+                  text-[#013550]
+                  font-semibold 
+                  px-5 
+                  py-2 
+                  rounded-full 
+                  shadow-sm
+                  transition-all
+                  duration-300
+                  hover:bg-[#e6faff]
+                  hover:shadow-md
+                "
+              >
+                CONTACT US
+              </Link>
+            </li>
           </ul>
 
           {/* Mobile Menu Button */}
@@ -138,7 +151,7 @@ const Navbar = () => {
                 <Link
                   href={link.href}
                   onClick={() => {
-                    if (!link.href.includes("#")) setActive(link.name);
+                    setActive(link.name);
                     setIsOpen(false);
                   }}
                   className={clsx(
@@ -152,9 +165,33 @@ const Navbar = () => {
                 </Link>
               </li>
             ))}
+
+            {/* Contact Button - Mobile */}
+            <li>
+              <Link
+                href="/#contact"
+                onClick={() => setIsOpen(false)}
+                className="
+                  block 
+                  text-center 
+                  bg-white 
+                  text-[#013550] 
+                  font-semibold 
+                  py-2 
+                  rounded-full 
+                  shadow-sm 
+                  hover:bg-[#e6faff]
+                  transition
+                "
+              >
+                CONTACT US
+              </Link>
+            </li>
           </ul>
         )}
       </nav>
+
+      {/* WhatsApp Button */}
       <motion.a
         href="https://wa.me/905352522282"
         target="_blank"

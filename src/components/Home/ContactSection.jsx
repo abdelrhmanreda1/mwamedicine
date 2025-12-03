@@ -8,16 +8,16 @@ const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="w-full py-8 md:py-16 px-6 bg-gradient-to-br from-[#f7fbfd] via-white to-[#e6f3fa] text-gray-800"
+      className="w-full py-8 md:py-16 px-1 md:px-6 bg-gradient-to-br from-[#f7fbfd] via-white to-[#e6f3fa] text-gray-800"
     >
-      <div className="w-[88%] mx-auto">
+      <div className="w-[92%] md:w-[88%] mx-auto">
         {/* Title */}
-        <div className="text-center mb-12">
+        <div className="text-center md:mb-12 mb-4">
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#035182] mb-2">
             Contact Us
           </h2>
           <span className="block w-28 h-1 bg-gradient-to-r from-[#5ecbff] to-[#0389d2] mx-auto mb-10 rounded-full"></span>
-          <p className="mt-4 text-[#475569] text-lg max-w-xl mx-auto">
+          <p className="mt-2 text-[#475569] text-[16px] md:text-lg max-w-xl mx-auto">
             Get in touch with us for any inquiries or partnership opportunities.
             We’re here to help!
           </p>
@@ -70,7 +70,7 @@ const ContactSection = () => {
             </div>
 
             {/* WhatsApp CTA */}
-            <div className="bg-gradient-to-r from-[#013E5D] to-[#035182] hover:from-[#035182] hover:to-[#013E5D] transition text-white p-6 rounded-2xl mt-6">
+            <div className="md:mb-0 mb-4 bg-gradient-to-r from-[#013E5D] to-[#035182] hover:from-[#035182] hover:to-[#013E5D] transition text-white p-6 rounded-2xl mt-6">
               <h3 className="text-2xl font-bold mb-2">Ready to Talk?</h3>
               <p className="mb-4 text-lg">Contact us now on WhatsApp!</p>
               <a
