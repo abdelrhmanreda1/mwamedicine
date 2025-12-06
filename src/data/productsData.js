@@ -2186,44 +2186,7 @@ export const productsData = [
 
     category: "Joint & Bone Health",
   },
-  {
-    id: 57,
-    name: "Becora-plus",
-    type: "Dietary Supplement",
-    department: "Neurology",
-    brand: "Lacora Nutrition",
-    isNew: true,
-    image: "/p57.png",
-    shortDesc:
-      "Vitamin B6 and B12 formula designed to support nerve repair, enhance energy levels, and reduce nerve-related discomfort.",
 
-    fullDesc: {
-      about: [
-        {
-          icon: <GiBrain className="text-[#4B2E83]" size={24} />,
-          title: "Nerve Repair Support",
-          text: "Helps nourish and repair peripheral nerves to improve nerve function.",
-        },
-        {
-          icon: <GiEnergyArrow className="text-[#4B2E83]" size={24} />,
-          title: "Energy & Vitality",
-          text: "Boosts overall body energy and reduces fatigue caused by nerve weakness.",
-        },
-        {
-          icon: <GiHealing className="text-[#4B2E83]" size={24} />,
-          title: "Facial Palsy Support",
-          text: "May aid in recovery from nerve-related facial weakness and discomfort.",
-        },
-      ],
-      usage: [
-        "Take 1 capsule once or twice daily after meals.",
-        "Maintain a balanced diet to support nerve health.",
-        "Consult a specialist if symptoms persist or worsen.",
-      ],
-    },
-
-    category: "Nerve Health",
-  },
   {
     id: 58,
     name: "Becormix-Boost",
@@ -2262,82 +2225,7 @@ export const productsData = [
 
     category: "Nerve Health",
   },
-  {
-    id: 59,
-    name: "Nuclomax",
-    type: "Dietary Supplement",
-    department: "Neurology",
-    brand: "Lacora Nutrition",
-    isNew: true,
-    image: "/p59.png",
-    shortDesc:
-      "Advanced neuro-support formula designed to relieve neuropathic pain, support nerve repair, and improve nerve function in various neuropathy conditions.",
 
-    fullDesc: {
-      about: [
-        {
-          icon: <GiBrain className="text-[#4A2FA2]" size={24} />,
-          title: "Neuropathy Support",
-          text: "Helps improve nerve function and reduce symptoms of diabetic, metabolic, and alcoholic neuropathies.",
-        },
-        {
-          icon: <GiLightningArc className="text-[#4A2FA2]" size={24} />,
-          title: "Pain Relief",
-          text: "Supports relief from nerve pain caused by herpes zoster and osteoarthritic neuralgia.",
-        },
-        {
-          icon: <GiHealing className="text-[#4A2FA2]" size={24} />,
-          title: "Nerve Repair",
-          text: "Promotes nerve healing and restoration in chronic neuropathic conditions.",
-        },
-      ],
-      usage: [
-        "Take 1 capsule once or twice daily after meals.",
-        "Use consistently to support nerve recovery.",
-        "Consult a healthcare provider for chronic or severe neuropathic cases.",
-      ],
-    },
-
-    category: "Nerve Health",
-  },
-  {
-    id: 60,
-    name: "Caldicin",
-    type: "Dietary Supplement",
-    department: "Orthopedic",
-    brand: "Lacora Nutrition",
-    isNew: true,
-    image: "/p60.png",
-    shortDesc:
-      "Calcium, Vitamin D3, and Vitamin K formula designed to support strong bones, enhance calcium absorption, and maintain teeth health.",
-
-    fullDesc: {
-      about: [
-        {
-          icon: <GiBoneKnife className="text-[#4A2FA2]" size={24} />,
-          title: "Bone Strength",
-          text: "Provides essential calcium to maintain bone density and overall skeletal strength.",
-        },
-        {
-          icon: <GiJoint className="text-[#4A2FA2]" size={24} />,
-          title: "Enhanced Absorption",
-          text: "Vitamin D3 helps maximize calcium absorption into bones for better effectiveness.",
-        },
-        {
-          icon: <GiHealing className="text-[#4A2FA2]" size={24} />,
-          title: "Bone Repair Support",
-          text: "Vitamin K contributes to proper calcium fixation and supports bone regeneration.",
-        },
-      ],
-      usage: [
-        "Take 1 capsule once or twice daily after meals.",
-        "Ensure exposure to sunlight to boost Vitamin D activity.",
-        "Consult your doctor if you have chronic bone or calcium disorders.",
-      ],
-    },
-
-    category: "Bone & Joint Health",
-  },
   {
     id: 61,
     name: "Neurodox",
